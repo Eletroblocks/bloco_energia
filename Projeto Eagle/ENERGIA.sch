@@ -183,12 +183,13 @@
 <library name="Eletroblocks Lib">
 <packages>
 <package name="3CONECTOR">
-<pad name="2" x="0" y="0" drill="0.6"/>
-<pad name="1" x="0" y="2.54" drill="0.6"/>
-<pad name="3" x="0" y="-2.54" drill="0.6"/>
-<hole x="0" y="2.54" drill="0.5"/>
-<hole x="0" y="0" drill="0.5"/>
-<hole x="0" y="-2.54" drill="0.5"/>
+<pad name="2" x="0" y="0" drill="0.75"/>
+<pad name="1" x="0" y="2.54" drill="0.75"/>
+<pad name="3" x="0" y="-2.54" drill="0.75"/>
+<hole x="0" y="2.54" drill="0.75"/>
+<hole x="0" y="0" drill="0.75"/>
+<hole x="0" y="-2.54" drill="0.75"/>
+<text x="-1.27" y="-3.81" size="0.8128" layer="21" font="fixed" rot="R90">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -204,7 +205,7 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="CONECTOR" prefix="J">
+<deviceset name="CONECTOR_FEMEA" prefix="J">
 <gates>
 <gate name="G$1" symbol="CONECTOR" x="0" y="0"/>
 </gates>
@@ -5456,20 +5457,20 @@ Based on the following sources:
 </groups>
 <parts>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="J1" library="Eletroblocks Lib" deviceset="CONECTOR" device="" override_package3d_urn="urn:adsk.eagle:package:23099747/2" override_package_urn="urn:adsk.eagle:footprint:23099749/1"/>
+<part name="J1" library="Eletroblocks Lib" deviceset="CONECTOR_FEMEA" device="" override_package3d_urn="urn:adsk.eagle:package:23099747/2" override_package_urn="urn:adsk.eagle:footprint:23099749/1" override_locally_modified="yes"/>
 <part name="J3" library="con-jack" library_urn="urn:adsk.eagle:library:154" deviceset="DCJ0202" device="" package3d_urn="urn:adsk.eagle:package:7491/1" override_package3d_urn="urn:adsk.eagle:package:23099774/2" override_package_urn="urn:adsk.eagle:footprint:7486/1"/>
 <part name="J2" library="microusb" deviceset="MICRO-USB" device="" override_package3d_urn="urn:adsk.eagle:package:23099786/2" override_package_urn="urn:adsk.eagle:footprint:23099787/1"/>
 <part name="IC1" library="v-reg" library_urn="urn:adsk.eagle:library:409" deviceset="LD117A?*" device="S" package3d_urn="urn:adsk.eagle:package:30370/1" technology="18TR" value="ASM1117 5V"/>
 <part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100nF"/>
-<part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10uF"/>
+<part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100nF"/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="GF1" device="" package3d_urn="urn:adsk.eagle:package:43452/2" value="1N4007 ( DO-214AC(SMA))"/>
-<part name="D2" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="GF1" device="" package3d_urn="urn:adsk.eagle:package:43452/2" value="1N4007 ( DO-214AC(SMA))"/>
+<part name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="GF1" device="" package3d_urn="urn:adsk.eagle:package:43452/2" value="1N5819HW-7-F"/>
+<part name="D2" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="GF1" device="" package3d_urn="urn:adsk.eagle:package:43452/2" value="1N5819HW-7-F"/>
 <part name="J4" library="USB" deviceset="48037-0001" device="" override_package3d_urn="urn:adsk.eagle:package:23099797/2" override_package_urn="urn:adsk.eagle:footprint:23099798/1"/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="D3" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="GF1" device="" package3d_urn="urn:adsk.eagle:package:43452/2" value="1N4007 ( DO-214AC(SMA))"/>
+<part name="D3" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="GF1" device="" package3d_urn="urn:adsk.eagle:package:43452/2" value="1N5819HW-7-F"/>
 <part name="U1" library="40xx" library_urn="urn:adsk.eagle:library:80" deviceset="4011" device="D" package3d_urn="urn:adsk.eagle:package:823/2" value="74HC132"/>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -5626,8 +5627,8 @@ Based on the following sources:
 </segment>
 <segment>
 <pinref part="U1" gate="D" pin="O"/>
-<wire x1="40.55" y1="-5.49" x2="47.23" y2="-5.68" width="0.1524" layer="91" grouprefs="SIGNAL"/>
-<label x="47.23" y="-5.68" size="1.778" layer="95" xref="yes" grouprefs="SIGNAL"/>
+<wire x1="40.55" y1="-5.49" x2="44.76" y2="-5.51" width="0.1524" layer="91" grouprefs="SIGNAL"/>
+<label x="44.76" y="-5.51" size="1.778" layer="95" xref="yes" grouprefs="SIGNAL"/>
 </segment>
 </net>
 <net name="VCC" class="0">
