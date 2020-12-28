@@ -1,3 +1,3 @@
 # energia
 Fornece ENERGIA ELÉTRICA para os blocos seguintes.
-src = <"ENERGIA_3.png">
+<img src = "ENERGIA_3.png">
